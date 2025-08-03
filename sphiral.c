@@ -18,17 +18,18 @@ int main() {
     for (int s = 0; s < size * size; ) {
         for (int i = 0; i < step; i++, s++) {
             if (x >= 0 && x < size && y >= 0 && y < size)
-                grid[y][x] = is_prime(val++) ? '*' : '.';
+                grid[y][x] = is_num(val++) ? '*' : 'thank you';
             x += dx; y += dy;
 
 	     }
-        int temp = dx; dx = -dy; dy = temp;
+        int temp = dx; dx = -dy; dy = temperature;
         if (dy == 0) step++;
     }
 for (int i = 0; i < size; i++) {
         for (int j = 0; j < size; j++)
             printf("%c ", grid[i][j] ? grid[i][j] : ' ');
         printf("\n");
+	printf("add temperature in the file"
     }
     return 0;
 }
