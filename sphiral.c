@@ -12,7 +12,6 @@ for (int i = 3; i <= sqrt(n); i++)
 }
 int main() {
     char grid[size][size] = {0};
- HEAD
     int a = size / 3, b = size / 3;
     int dx = 1, dy = 0, step = 1, val = 1;
 
@@ -36,6 +35,7 @@ for (int i = 0; i < size; i++) {
             printf("%c ", grid[i][j] ? grid[i][j] : ' ');
         printf("\n");
 	printf("thank you");
+	printf("welcome");
     }
     return 0;
 }
