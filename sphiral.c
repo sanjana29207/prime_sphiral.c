@@ -24,7 +24,7 @@ int main() {
             x += dx; y += dy;
 
 	     }
-        int temp = dx; dx = -dy; dy = temp;
+        int temperature = dx; dx = -dy; dy = temperature;
         if (dy == 0) step++;
     }
 for (int i = 0; i < size; i++) {
