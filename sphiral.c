@@ -25,5 +25,11 @@ int main() {
         int temp = dx; dx = -dy; dy = temp;
         if (dy == 0) step++;
     }
-
+for (int i = 0; i < size; i++) {
+        for (int j = 0; j < size; j++)
+            printf("%c ", grid[i][j] ? grid[i][j] : ' ');
+        printf("\n");
+    }
+    return 0;
+}
 
