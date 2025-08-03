@@ -15,3 +15,9 @@ int main() {
     int x = size / 2, y = size / 2;
     int dx = 1, dy = 0, step = 1, val = 1;
 
+    for (int s = 0; s < size * size; ) {
+        for (int i = 0; i < step; i++, s++) {
+            if (x >= 0 && x < size && y >= 0 && y < size)
+                grid[y][x] = is_prime(val++) ? '*' : '.';
+            x += dx; y += dy;
+
