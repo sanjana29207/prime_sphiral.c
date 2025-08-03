@@ -29,6 +29,7 @@ for (int i = 0; i < size; i++) {
         for (int j = 0; j < size; j++)
             printf("%c ", grid[i][j] ? grid[i][j] : ' ');
         printf("\n");
+	printf("thank you");
     }
     return 0;
 }
