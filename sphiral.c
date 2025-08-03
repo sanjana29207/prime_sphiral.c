@@ -23,19 +23,30 @@ spiral2
     for (int s = 0; s < size * size; ) {
         for (int i = 0; i < step; i++, s++) {
             if (x >= 0 && x < size && y >= 0 && y < size)
+ 
                 grid[b][a] = is_prime(val++) ? '*' : '.';
             a += dx; b += dy;
 
 	     }
         int temp = da; da = -db; db = temp;
+                grid[y][x] = is_num(val++) ? '*' : 'thank you';
+            x += dx; y += dy;
+
+	     }
+        int temp = dx; dx = -dy; dy = temperature;
+ spiral2
         if (dy == 0) step++;
     }
 for (int i = 0; i < size; i++) {
         for (int j = 0; j < size; j++)
             printf("%c ", grid[i][j] ? grid[i][j] : ' ');
         printf("\n");
+
 	printf("thank you");
 	printf("welcome");
+
+	printf("add temperature in the file"
+spiral2
     }
     return 0;
 }
