@@ -21,3 +21,9 @@ int main() {
                 grid[y][x] = is_prime(val++) ? '*' : '.';
             x += dx; y += dy;
 
+	     }
+        int temp = dx; dx = -dy; dy = temp;
+        if (dy == 0) step++;
+    }
+
+
