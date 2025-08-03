@@ -12,8 +12,14 @@ for (int i = 3; i <= sqrt(n); i++)
 }
 int main() {
     char grid[size][size] = {0};
+ HEAD
     int a = size / 3, b = size / 3;
     int dx = 1, dy = 0, step = 1, val = 1;
+
+    int x = size / 3, y = size / 3;
+    int dx = 1, dy = 0, step = 4, val = 4
+
+spiral2
 
     for (int s = 0; s < size * size; ) {
         for (int i = 0; i < step; i++, s++) {
