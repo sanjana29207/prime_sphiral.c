@@ -4,10 +4,12 @@
 #define size 10
 
 int is_prime(int n) {
-    if (n < 3) return 0;
+    if (n < 3) 
+	    return 0;
     
 for (int i = 3; i <= sqrt(n); i++)
-        if (n % i == 0) return 0;
+        if (n % i == 0) 
+		return 0;
     return 1;
 }
 int main() {
@@ -15,10 +17,12 @@ int main() {
     int a = size / 3, b = size / 3;
     int dx = 1, dy = 0, step = 1, val = 1;
 
-    int x = size / 3, y = size / 3;
+    int x = size / 3, y = size / 3
     int dx = 1, dy = 0, step = 4, val = 4
 
 spiral2
+    int dx = 1, dy = 0, step = 4, value = 4;
+ spiral3
 
     for (int s = 0; s < size * size; ) {
         for (int i = 0; i < step; i++, s++) {
@@ -30,6 +34,8 @@ spiral2
 	     }
         int temp = da; da = -db; db = temp;
                 grid[y][x] = is_num(val++) ? '*' : 'thank you';
+                grid[y][x] = is_prime(value++) ? '*' : '.';
+spiral3
             x += dx; y += dy;
 
 	     }
